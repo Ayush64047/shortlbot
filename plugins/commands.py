@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/ZCipher')
+                InlineKeyboardButton('🤖 Updates', url='https://t.me/z_harbour')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -44,10 +44,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📙 Tutorial', url='https://t.me/ZCipher/1293'),
-            InlineKeyboardButton('Main Channel ⚡', url='https://t.me/ZCipher')
+            InlineKeyboardButton('🎩Black Market Files Group', url='https://t.me/z_harbour_files'),
+            InlineKeyboardButton('🤖Mdisk BOTS Federation⚡', url='https://t.me/mdisk_bots')
             ],[
-            InlineKeyboardButton('Get Online Playing links here 😬', url='https://t.me/MdiskMovies_x')
+            InlineKeyboardButton('🏴DarkestLinkedGroup🕷️', url='https://t.me/blackest_harbour')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -66,7 +66,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Must Join Main Channel", url=invite_link.invite_link
+                    "🤖 Must Join Dark Fed Main Channel", url=invite_link.invite_link
                 )
             ]
         ]
@@ -80,7 +80,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Please Join Blackest Market to use this Bot!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -89,10 +89,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📙 Tutorial', url='https://t.me/ZCipher/1293'),
-            InlineKeyboardButton('Main Channel⚡', url='https://t.me/ZCipher')
+            InlineKeyboardButton('👨‍💻Developer', url='https://t.me/sigma_male_007'),
+            InlineKeyboardButton('🏴BlackestMarketLinks', url='https://t.me/blackest_harbour')
             ],[
-            InlineKeyboardButton(' Get Online Playing links here 😬  ', url='https://t.me/MdiskMovies_x')
+            InlineKeyboardButton('🏴BlackMarketFiles', url='https://t.me/MdiskMovies_x')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
