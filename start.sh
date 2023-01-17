@@ -1,12 +1,6 @@
-if [ -z $UPSTREAM_REPO ]
-then
-  echo "Cloning main Repository"
-  git clone https://github.com/EvamariaTG/EvaMaria.git /EvaMaria
-else
-  echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /EvaMaria
-fi
-cd /EvaMaria
+echo "Cloning Repo...."
+git clone https://github.com/Ayush64046/shortlbot.git /AyushMdisk
+cd /shortlbot
 pip3 install -U -r requirements.txt
-echo "Starting Bot...."
-python3 bot.py
+echo "⚡️⚡️ Starting shortlbot..."
+python3 main.py
